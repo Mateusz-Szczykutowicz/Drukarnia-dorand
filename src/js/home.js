@@ -12,6 +12,12 @@ form.addEventListener("submit", (e) => {
         formMessage.style.display = "none";
     }, 5000);
 
+    for (const child of form.children) {
+        if (child.value !== "WYŚLIJ") {
+            child.value = "";
+        }
+    }
+
     console.log(newForm.get("name"));
     console.log(newForm.get("tel"));
     console.log(newForm.get("email"));
