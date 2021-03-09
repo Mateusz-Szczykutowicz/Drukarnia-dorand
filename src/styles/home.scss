@@ -365,8 +365,7 @@ footer {
             margin-top: 2px;
             display: block;
             a {
-                color: #ddd;
-                text-decoration: none;
+                color: #fff;
             }
         }
     }
@@ -710,10 +709,9 @@ footer {
             color: #fff;
             span {
                 margin-top: 2px;
-                display: block;
+                display: inline;
                 a {
-                    color: #ddd;
-                    text-decoration: none;
+                    color: #fff;
                 }
             }
         }
@@ -929,7 +927,7 @@ footer {
             }
             .contact_container {
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-around;
                 margin: 0;
                 margin-bottom: 600px;
                 .form {
@@ -1089,10 +1087,9 @@ footer {
             color: #fff;
             span {
                 margin-top: 2px;
-                display: block;
+                display: inline;
                 a {
-                    color: #ddd;
-                    text-decoration: none;
+                    color: #fff;
                 }
             }
         }
@@ -1188,12 +1185,15 @@ footer {
     main {
         .aboutMe {
             h2 {
+                padding: 18px $mainContainer;
                 width: 650px;
                 transform: translateX(-1 * $mainContainer);
             }
         }
         .offer {
             h2 {
+                padding: 18px $mainContainer;
+                width: 650px;
                 transform: translateX(-1 * $mainContainer);
             }
             .products {
@@ -1206,6 +1206,8 @@ footer {
         }
         .contact {
             h2 {
+                padding: 18px $mainContainer;
+                width: 650px;
                 transform: translateX(-1 * $mainContainer);
             }
         }

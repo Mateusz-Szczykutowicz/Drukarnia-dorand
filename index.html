@@ -6,8 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Drukarnia Dorand</title>
 
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
+        <meta
+            name="description"
+            content="Usługowo-Produkcyjny Zakład Poligraficzny DORAND istnieje na rynku od 1993 roku. Świadczymy szereg drukarskich usług, drukujemy nie tylko bardzo odpowiedzialne produkty jak np. książki lub druk wielkoformatowy, ale także świadczymy różne drobniejsze usługi."
+        />
+        <meta
+            name="keywords"
+            content="Drukarnia, drukarnia Dorand, Dorand, druki, kalendarze"
+        />
 
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
@@ -23,9 +29,11 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="#o_nas">O nas</a></li>
-                    <li><a href="#oferta">Oferta</a></li>
-                    <li><a href="#kontakt">Kontakt</a></li>
+                    <li>
+                        <a id="aboutUsButton">O nas</a>
+                    </li>
+                    <li><a id="offerButton">Oferta</a></li>
+                    <li><a id="contactButton">Kontakt</a></li>
                 </ul>
             </nav>
         </header>
@@ -39,13 +47,13 @@
                     </h2>
                 </div>
             </section>
-            <section class="aboutMe" id="o_nas">
+            <section class="aboutMe" id="aboutUsElement">
                 <div class="mainContainer">
                     <h2>O NAS</h2>
                     <div class="text">
                         <p class="first">
                             Usługowo-Produkcyjny Zakład Poligraficzny DORAND
-                            istnieje na rynku od 1993 roku. Właciciele Teresa i
+                            istnieje na rynku od 1993 roku. Właściciele Teresa i
                             Stanisław Ciskowie prowadzą firmę od 1994r. Firma
                             jest już znana na naszym rynku i ciągle się rozwija.
                         </p>
@@ -53,9 +61,9 @@
                         <p>
                             Świadczymy szereg drukarskich usług, drukujemy nie
                             tylko bardzo odpowiedzialne produkty jak np. książki
-                            lub druk wielkoformatowe, ale także różne
-                            drobniejsze. U nas możesz zamówić i otrzymać np.:
-                            ulotki, plakaty, wizytówki, gazetki regionalne,
+                            lub druk wielkoformatowy, ale także świadczymy różne
+                            drobniejsze usługi. U nas możesz zamówić i otrzymać
+                            np.: ulotki, plakaty, wizytówki, gazetki regionalne,
                             foldery, naklejki, bloczki faktur, druki medyczne,
                             wykonywane na papierach offsetowych, samoprzylepnych
                             i samokopiujących.
@@ -71,13 +79,13 @@
                             przysłowiowe 5 minut. Dobrodziejstwem jest też
                             stanowisko do samodzielnego drukowania, tu możesz
                             wydrukować z pendrive’a, internetu, poczty
-                            elektronicznej, CD.
+                            elektronicznej, CD. Zapraszamy serdecznie.
                         </p>
                     </div>
                     <img src="./src/img/Dorand CMYK.svg" alt="Dorand" />
                 </div>
             </section>
-            <section class="offer" id="oferta">
+            <section class="offer" id="offerElement">
                 <div class="mainContainer">
                     <h2>OFERTA</h2>
                     <div class="products">
@@ -195,7 +203,7 @@
                     <p class="second">Nie czekaj odwiedź nas już dziś!</p>
                 </div>
             </section>
-            <section class="contact" id="kontakt">
+            <section class="contact" id="contactElement">
                 <div class="mainContainer">
                     <h2>KONTAKT</h2>
                     <div class="contact_container">
@@ -207,30 +215,29 @@
                                     name="name"
                                     class="form_area"
                                     placeholder="Imię"
+                                    required
                                 />
                                 <input
                                     type="tel"
                                     name="tel"
                                     class="form_area"
                                     placeholder="Numer tel."
+                                    required
                                 />
                                 <input
                                     type="email"
                                     name="email"
                                     class="form_area"
                                     placeholder="Mail"
+                                    required
                                 />
                                 <input
                                     type="text"
                                     name="subject"
                                     class="form_area"
                                     placeholder="Temat"
+                                    required
                                 />
-                                <!-- <textarea
-                            type="text"
-                            name="message"
-                            class="form_area big" placeholder="Wiadomość"
-                        /> -->
                                 <textarea
                                     name="message"
                                     id="message"
@@ -238,6 +245,7 @@
                                     rows="10"
                                     class="form_area big"
                                     placeholder="Wiadomość"
+                                    required
                                 ></textarea>
                                 <input
                                     type="submit"
@@ -291,10 +299,13 @@
                 <span
                     >created by
                     <a href="https://about.deltastorm.pl/"
-                        >Mateusz Szczykutowicz</a
-                    >
-                    and <a href="#">Szymon Kwiatkowski</a></span
-                >
+                        >Mateusz Szczykutowicz
+                    </a>
+                    and
+                    <a href="https://www.instagram.com/smnart_studio/"
+                        >Szymon Kwiatkowski
+                    </a>
+                </span>
             </h2>
         </footer>
         <script src="./build/js/main.bundle.js"></script>
